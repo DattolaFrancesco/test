@@ -1,5 +1,6 @@
 header {
   height: 8vh;
+
   nav {
     height: 100%;
   }
@@ -8,6 +9,9 @@ header {
   width: 10%;
   min-width: 50px;
   padding-top: 8px;
+}
+#hero {
+  animation: start 1s ease forwards;
 }
 .hero {
   height: 45vh;
@@ -19,11 +23,28 @@ header {
 .fs-xxl {
   font-size: 6rem;
 }
-
+.start-10 {
+  left: -250px;
+}
 .animationHeroTitle {
-  animation: move 15s linear infinite;
+  animation: move 15s linear 1s infinite;
+}
+span {
+  animation: start 1s linear forwards;
 }
 
+@keyframes start {
+  from {
+    transform: translateY(-1000px);
+    filter: blur(0.2em);
+  }
+  75% {
+    filter: blur(0);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
 @keyframes move {
   from {
     transform: translate(0px);
