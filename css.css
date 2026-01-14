@@ -49,13 +49,35 @@ header nav {
     transform: translate(-50%);
   }
 }
-
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) and (orientation: portrait) {
   .fs-xxl {
     font-size: 10rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) and (orientation: landscape) {
+  .fs-xxl {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .hero {
+    height: 100vh;
+    background-attachment: fixed;
+  }
+  .fs-xxl {
+    font-size: 15rem;
+  }
+}
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .hero {
+    height: 100vh;
+    background-attachment: fixed;
+  }
+  .fs-xxl {
+    font-size: 6rem;
+  }
+}
+@media screen and (min-width: 1200px) and (orientation: landscape) {
   .hero {
     height: 100vh;
     background-attachment: fixed;
