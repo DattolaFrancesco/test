@@ -1,9 +1,8 @@
 header {
   height: 8vh;
-
-  nav {
-    height: 100%;
-  }
+}
+header nav {
+  height: 100%;
 }
 .logo-w-10 {
   width: 10%;
@@ -15,16 +14,13 @@ header {
 }
 .hero {
   height: 45vh;
-  background-image: url(/assets/img/dan-freeman-wAn4RfmXtxU-unsplash.jpg);
+  background-image: url(img/dan-freeman-wAn4RfmXtxU-unsplash.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: scroll;
 }
 .fs-xxl {
   font-size: 6rem;
-}
-.start-10 {
-  left: -250px;
 }
 .animationHeroTitle {
   animation: move 15s linear 1s infinite;
