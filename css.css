@@ -13,7 +13,7 @@ header nav {
   animation: start 1s ease forwards;
 }
 .hero {
-  height: 45vh;
+  height: 88vh;
   background-image: url(img/dan-freeman-wAn4RfmXtxU-unsplash.jpg);
   background-position: center;
   background-size: cover;
@@ -57,7 +57,7 @@ header nav {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    height: 90vh;
+    height: 100vh;
     background-attachment: fixed;
   }
   .fs-xxl {
