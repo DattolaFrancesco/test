@@ -18,7 +18,7 @@ header {
   background-image: url(/assets/img/dan-freeman-wAn4RfmXtxU-unsplash.jpg);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 .fs-xxl {
   font-size: 6rem;
@@ -62,6 +62,7 @@ span {
 @media screen and (min-width: 768px) {
   .hero {
     height: 92vh;
+    background-attachment: fixed;
   }
   .fs-xxl {
     font-size: 15rem;
