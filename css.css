@@ -1,0 +1,48 @@
+header {
+  height: 8vh;
+  nav {
+    height: 100%;
+  }
+}
+.logo-w-10 {
+  width: 10%;
+  min-width: 50px;
+  padding-top: 8px;
+}
+.hero {
+  height: 45vh;
+  background-image: url(/assets/img/dan-freeman-wAn4RfmXtxU-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.fs-xxl {
+  font-size: 6rem;
+}
+
+.animationHeroTitle {
+  animation: move 15s linear infinite;
+}
+
+@keyframes move {
+  from {
+    transform: translate(0px);
+  }
+  to {
+    transform: translate(-50%);
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .fs-xxl {
+    font-size: 10rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 92vh;
+  }
+  .fs-xxl {
+    font-size: 15rem;
+  }
+}
