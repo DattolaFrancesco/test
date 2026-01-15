@@ -1,7 +1,7 @@
 header {
-}
-header nav {
-  height: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 .logo-w-10 {
   width: 10%;
