@@ -5,7 +5,6 @@ function updateHeroHeight() {
   hero.style.height = window.innerHeight - header.getBoundingClientRect().height + "px";
 }
 
-window.addEventListener("resize", updateHeroHeight);
 window.addEventListener("load", updateHeroHeight);
 
 function navbarbtn() {
