@@ -9,11 +9,13 @@ window.addEventListener("resize", updateHeroHeight);
 window.addEventListener("load", updateHeroHeight);
 
 function navbarbtn() {
+  toggle = true;
   setTimeout(() => {
     if (!toggle) {
-      hero.style.height = window.innerHeight - header.getBoundingClientRect().height + "px";
+      hero.style.height = window.innerHeight + header.getBoundingClientRect().height + "px";
       console.log(window.innerHeight);
       console.log(header.getBoundingClientRect().height);
+      toggle = false;
     }
   }, 500);
 }
