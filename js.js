@@ -6,3 +6,7 @@ function updateHeroHeight() {
 
 window.addEventListener("resize", updateHeroHeight);
 window.addEventListener("load", updateHeroHeight);
+
+function navbarbtn() {
+  updateHeroHeight();
+}
