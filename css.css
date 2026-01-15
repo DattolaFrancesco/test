@@ -1,5 +1,4 @@
 header {
-  height: 5rem;
 }
 header nav {
   height: 100%;
@@ -12,15 +11,8 @@ header nav {
 #hero {
   animation: start 1s ease forwards;
 }
-.visibili {
-  background-color: rgba(255, 255, 255, 0.79);
-  z-index: 99;
-  padding-inline: 10px;
-  border-radius: 20px;
-}
 
 .hero {
-  height: 88vh;
   background-image: url(img/dan-freeman-wAn4RfmXtxU-unsplash.jpg);
   background-position: center;
   background-size: cover;
@@ -68,7 +60,6 @@ header nav {
 }
 @media screen and (min-width: 768px) and (orientation: portrait) {
   .hero {
-    height: 100vh;
     background-attachment: fixed;
   }
   .fs-xxl {
@@ -77,7 +68,6 @@ header nav {
 }
 @media screen and (min-width: 768px) and (orientation: landscape) {
   .hero {
-    height: 100vh;
     background-attachment: fixed;
   }
   .fs-xxl {
@@ -86,7 +76,6 @@ header nav {
 }
 @media screen and (min-width: 1200px) and (orientation: landscape) {
   .hero {
-    height: 100vh;
     background-attachment: fixed;
   }
   .fs-xxl {

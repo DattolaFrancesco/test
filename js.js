@@ -1,6 +1,7 @@
 function updateHeroHeight() {
+  const header = document.querySelector("header");
   const hero = document.querySelector(".hero");
-  hero.style.height = window.innerHeight - 80 + "px";
+  hero.style.height = window.innerHeight - header.getBoundingClientRect().height + "px";
 }
 
 window.addEventListener("resize", updateHeroHeight);
