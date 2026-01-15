@@ -1,5 +1,6 @@
+const header = document.querySelector("header");
+let toggle = false;
 function updateHeroHeight() {
-  const header = document.querySelector("header");
   const hero = document.querySelector(".hero");
   hero.style.height = window.innerHeight - header.getBoundingClientRect().height + "px";
 }
@@ -8,5 +9,11 @@ window.addEventListener("resize", updateHeroHeight);
 window.addEventListener("load", updateHeroHeight);
 
 function navbarbtn() {
-  updateHeroHeight();
+  setTimeout(() => {
+    if (!toggle) {
+      hero.style.height = window.innerHeight - header.getBoundingClientRect().height + "px";
+      console.log(window.innerHeight);
+      console.log(header.getBoundingClientRect().height);
+    }
+  }, 500);
 }
